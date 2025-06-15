@@ -29,11 +29,11 @@ const makeEmptyRepository = (): Repository => ({
 });
 
 const makeEmptyRepositoryArray = () => [
-    makeEmptyRepository(),
     {
-        metaUrl: "https://raw.githubusercontent.com/ItsLogic/SekaiPlus/refs/heads/main/meta.json",
-        name: "SekaiPlus"
-    }
+        metaUrl: "https://raw.githubusercontent.com/ItsLogic/SekaiPlus/refs/heads/sekai/meta.json",
+        name: "Project Sekai Stickers"
+    },
+    makeEmptyRepository()
 ];
 
 async function fetchRepositoryName(metaUrl: string): Promise<string | null> {
@@ -277,10 +277,16 @@ const SekaiStickerChatButton: ChatBarButton = () => {
 
 let IS_FONTS_LOADED = false;
 
+// Define draff locally if not in main Devs
+const Draff = {
+    name: "Draff",
+    id: 315923287953637377n  // Replace with actual Discord ID
+};
+
 export default definePlugin({
     name: "Sekai Stickers",
     description: "Sekai Stickers with support for multiple external repositories",
-    authors: [Devs.MaiKokain],
+    authors: [Devs.MaiKokain, Draff],
     dependencies: ["ChatInputButtonAPI"],
     settings,
     start: async () => {
