@@ -33,7 +33,7 @@ export interface EnhancedCharacter extends Character {
 export const DEFAULT_REPOSITORIES: Repository[] = [
     {
         name: "Default",
-        url: "https://raw.githubusercontent.com/ItsLogic/SekaiPlus/refs/heads/main/"
+        url: "https://raw.githubusercontent.com/ItsLogic/SekaiPlus/refs/heads/sekai/"
     }
 ];
 

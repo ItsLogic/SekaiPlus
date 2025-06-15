@@ -7,10 +7,10 @@
 import { showNotification } from "@api/Notifications";
 import { Button } from "@webpack/common";
 
-export const VERSION = "1.0.3";
+export const VERSION = "1.1.0";
 
 async function getVersion() {
-    const repoVersion = await (await fetch("https://raw.githubusercontent.com/MaiKokain/sekaistickers-vencord/main/utils/versionCheck.tsx", { cache: "no-cache" })).text();
+    const repoVersion = await (await fetch("https://raw.githubusercontent.com/ItsLogic/SekaiPlus/refs/heads/main/utils/versionCheck.tsx", { cache: "no-cache" })).text();
     const repoVersionMatch = repoVersion.match(/export const VERSION = "(.+)";/);
     if (!repoVersionMatch) return;
     const [_, version] = repoVersionMatch;
