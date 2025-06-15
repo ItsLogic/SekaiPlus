@@ -4,13 +4,13 @@
         "name": "Ganyu 1",
         "character": "Ganyu",
         "img": "Ganyu/Ganyu_1.png",
-        "color": "#CADBF5"
+        "color": "#72aae3"
     },
     {
         "id": "3",
         "name": "Ganyu 2",
         "character": "Ganyu",
         "img": "Ganyu/Ganyu_2.png",
-        "color": "#CADBF5"
+        "color": "#72aae3"
     }
 ]
