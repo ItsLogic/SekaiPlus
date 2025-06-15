@@ -269,7 +269,7 @@ const settings = definePluginSettings({
 
 const SekaiStickerChatButton: ChatBarButton = () => {
     return (
-        <ChatBarButton onClick={() => openModal(props => <SekaiStickersModal modalProps={props} settings={settings} />)} tooltip="Sekai Stickers">
+        <ChatBarButton onClick={() => openModal(props => <SekaiStickersModal modalProps={props} settings={settings} />)} tooltip="SekaiPlus">
             {kanadeSvg()}
         </ChatBarButton>
     );
@@ -284,8 +284,8 @@ const Draff = {
 };
 
 export default definePlugin({
-    name: "Sekai Stickers",
-    description: "Sekai Stickers with support for multiple external repositories",
+    name: "SekaiPlus",
+    description: "A fork of Sekai Stickers with multiple improvements including repository support.",
     authors: [Devs.MaiKokain, Draff],
     dependencies: ["ChatInputButtonAPI"],
     settings,

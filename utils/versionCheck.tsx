@@ -29,7 +29,7 @@ export async function checkUpdate() {
     if (!updateVer) return;
 
     showNotification({
-        title: `Update available for Sekai Stickers: ${updateVer}`,
+        title: `Update available for SekaiPlus: ${updateVer}`,
         body: "Update or knight Mafuyu Asahina comes to your house",
         permanent: false,
         noPersist: true,

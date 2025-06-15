@@ -166,7 +166,7 @@ export default function SekaiStickersModal({ modalProps, settings }: { modalProp
         return (
             <ModalRoot {...modalProps} size={ModalSize.DYNAMIC}>
                 <ModalHeader>
-                    <Text variant="heading-lg/bold" style={{ flexGrow: 1 }}>Sekai Stickers</Text>
+                    <Text variant="heading-lg/bold" style={{ flexGrow: 1 }}>SekaiPlus</Text>
                     <ModalCloseButton onClick={modalProps.onClose} />
                 </ModalHeader>
                 <ModalContent>
@@ -179,7 +179,7 @@ export default function SekaiStickersModal({ modalProps, settings }: { modalProp
     return (
         <ModalRoot {...modalProps} size={ModalSize.DYNAMIC}>
             <ModalHeader>
-                <Text variant="heading-lg/bold" style={{ flexGrow: 1 }}>Sekai Stickers</Text>
+                <Text variant="heading-lg/bold" style={{ flexGrow: 1 }}>SekaiPlus</Text>
                 <ModalCloseButton onClick={modalProps.onClose} />
             </ModalHeader>
             <ModalContent>
